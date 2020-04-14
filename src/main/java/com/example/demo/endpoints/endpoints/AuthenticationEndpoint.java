@@ -1,8 +1,8 @@
-package com.example.demo.endpoints;
+package com.example.demo.endpoints.endpoints;
 
-import com.example.demo.endpoints.dto.AuthRequest;
-import com.example.demo.infrastructure.util.JwtUtil;
-import com.example.demo.services.UserService;
+import com.example.demo.endpoints.endpoints.dto.AuthRequest;
+import com.example.demo.endpoints.infrastructure.util.JwtUtil;
+import com.example.demo.endpoints.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;

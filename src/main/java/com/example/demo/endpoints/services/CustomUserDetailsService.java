@@ -1,7 +1,6 @@
-package com.example.demo.services;
+package com.example.demo.endpoints.services;
 
-import com.example.demo.entity.User;
-import com.example.demo.repository.UserRepository;
+import com.example.demo.endpoints.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

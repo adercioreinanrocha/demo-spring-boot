@@ -1,4 +1,4 @@
-package com.example.demo.infrastructure.util;
+package com.example.demo.endpoints.infrastructure.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,5 +1,6 @@
-package com.example.demo.entity;
+package com.example.demo.endpoints.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,9 +10,16 @@ import javax.persistence.Table;
 public class User {
 
     @Id
+    @Column(name = "ID")
     private Long id;
+
+    @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "PASSWORD")
     private String password;
+
+    @Column(name = "ROLE")
     private String role; // ADMIN ou USER
 
     public Long getId() {

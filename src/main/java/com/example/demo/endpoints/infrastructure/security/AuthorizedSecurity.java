@@ -1,4 +1,4 @@
-package com.example.demo.infrastructure.security;
+package com.example.demo.endpoints.infrastructure.security;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
