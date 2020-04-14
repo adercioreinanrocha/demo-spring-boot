@@ -4,6 +4,7 @@ import com.example.demo.endpoints.dto.AuthRequest;
 import com.example.demo.infrastructure.util.JwtUtil;
 import com.example.demo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,9 +25,16 @@ public class AuthenticationEndpoint {
     private JwtUtil jwtUtil;
 
 
-    @GetMapping("/")
-    public String welcome(){
-        return "Usuario Autenticado";
+    @GetMapping("/admin")
+    @PreAuthorize("@AuthorizedSecurity.hasRules('ADMIN')")
+    public String admin(){
+        return "Usuario Administrador";
+    }
+
+    @GetMapping("/user")
+    @PreAuthorize("@AuthorizedSecurity.hasRules('USER', 'ADMIN')")
+    public String user(){
+        return "Usuario Comum";
     }
 
     @PostMapping("/authenticate")
