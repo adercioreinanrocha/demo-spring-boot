@@ -1,0 +1,123 @@
+- kubernetes
+- Docker
+- Docker swarm
+- Ecossistema spring-boot
+
+
+
+
+
+Aula 01 - Spring boot
+- Como funciona o spring-boot
+- Quais vantagens de utilizar o spring-boot
+- Estrutura spring-boot projeto real
+- Mundo spring-boot
+- Quais formas de melhorar a performance de uma aplicação?
+- Como processar milhares de informações sem impactar a performance para usuário?
+https://spring.io/projects/spring-boot
+https://spring.io/projects/spring-data
+
+01. O que é o spring-boot?
+-----------------------------
+Spring Boot é um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações. Você escolhe os módulos que deseja através dos starters que inclui no pom.xml do seu projeto. Eles, basicamente, são dependências que agrupam outras dependências.
+
+Apesar do Spring Boot, através da convenção, já deixar tudo configurado, nada impede que você crie as suas customizações caso sejam necessárias.
+
+
+02. Quais vantagens de utilizar o spring-boot?
+-----------------------------
+* Produtividade no desenvolvimento de sua aplicação com tarefas de infraestrutura
+* Ajuda na configuração iniciais do seu projeto para incluir sua regra de negócio.
+* Melhora a organização do seu projeto, dado que simplifica a configuração de infraestrutura inicial.
+* Servidor de aplicação embarcado na aplicação(por default tomcat)
+* Simplifica a entrega e execução da aplicação, dado que a execução é simples(java -jar projeto.jar)
+* Documentação viva e comunidade Ativa na internet.* Sempre novas dependências estão sendo criadas na comunidade spring com novos integrações de infraestrutura, por exemplo(spring-data-redis, spring-boot-data-mongodb, spring-data-jpa, spring-starter-actuator) etc.
+- Spring Data Rest 
+- spring-amqp
+- spring-boot-actuator
+- spring-boot-starter-data-cassandra
+- spring-boot-starter-data-redis  
+https://github.com/spring-projects/spring-boot/tree/master/spring-boot-project/spring-boot-starters
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html
+
+
+
+
+
+
+
+Aula 02
+
+01 - Criar projeto spring-boot do zero
+ 01. Criar endpoint hello world
+ 02. Integração spring-boot-starter-jpa
+
+
+
+
+
+Aula 03
+01 - Spring boot security ( Integração autenticação/autorização via token JWT)
+
+- O que é autenticação? Quem sou eu? usuario: tal senha: tal
+- O que é Autorização? São os privilegios que você pode fazer( Por exemplo: inclusão/alteração/deleção de alguma dado).
+
+
+
+O que é Stateless VS Stateful?
+Stateful  --> Guarda Estado
+Stateless --> Não guarda estado
+
+
+Aplicação sem o JWT ( Como era feito?)
+Atraves do cookie e armazenamento na sessão distribuida de forma Stateful.
+
+
+Autenticação Cookie(Session) VS Modern Token-Based
+
+https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
+
+https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a
+
+
+O que é o JWT?
+Json Web Token, é uma forma segura de transmição de informações entre partes de forma segura. Essas informações podem ser verificadas e confiáveis porque são assinadas digitalmente. Os JWTs podem ser assinados usando um segredo (com o algoritmo HMAC).
+
+
+https://jwt.io/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Aula 04 - Docker/kubernetes
+- Introdução docker
+- Porque usar docker
+- Mundo do Dockerhub 
+- Introdução kubernetes
+- Conceito de Namespace
+- Conceito de POD
+- Conceito de container
+- Conceito Configmap
+- Conceito de Service
+- Vantagens de utilização
+- Como funciona na pratica
+
+
+
