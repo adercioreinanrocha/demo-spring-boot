@@ -1,7 +1,7 @@
-package com.example.demo.endpoints;
+package com.example.demo.endpoints.endpoints;
 
-import com.example.demo.entity.Student;
-import com.example.demo.services.StudentService;
+import com.example.demo.endpoints.services.StudentService;
+import com.example.demo.endpoints.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

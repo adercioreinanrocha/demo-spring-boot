@@ -1,7 +1,7 @@
-package com.example.demo.infrastructure.filter;
+package com.example.demo.endpoints.infrastructure.filter;
 
-import com.example.demo.infrastructure.util.JwtUtil;
-import com.example.demo.services.CustomUserDetailsService;
+import com.example.demo.endpoints.infrastructure.util.JwtUtil;
+import com.example.demo.endpoints.services.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

@@ -1,4 +1,4 @@
-package com.example.demo.endpoints.dto;
+package com.example.demo.endpoints.endpoints.dto;
 
 public class AuthRequest {
 
