@@ -1,9 +1,7 @@
 package com.example.demo.endpoints.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity(name = "STUDENT")
 public class Student {
@@ -18,6 +16,9 @@ public class Student {
 
     @Column(name = "PASSPORT_NUMBER")
     private String passportNumber;
+
+    @Transient
+    private List<Book> books;
 
     public Long getId() {
         return id;
@@ -41,5 +42,13 @@ public class Student {
 
     public void setPassportNumber(String passportNumber) {
         this.passportNumber = passportNumber;
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
 }
